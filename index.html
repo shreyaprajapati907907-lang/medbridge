@@ -4,63 +4,247 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>MedBridge</title>
+    <title>MedBridge | Understand Your Health</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>MedBridge</h1>
-        <p>Understand your medical information with AI</p>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">✚</span>
+            <span>MedBridge</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <button class="nav-button" id="navAskButton">
+            Ask MedBridge
+        </button>
     </header>
 
-    <main class="container">
+
+    <!-- Hero -->
+    <main id="home">
 
         <section class="hero">
-            <h2>Your Medical Information, Made Understandable</h2>
 
-            <p>
-                MedBridge helps users understand complex medical information
-                in simple language using AI.
-            </p>
+            <div class="hero-content">
 
-            <button id="askButton">Ask MedBridge</button>
+                <div class="badge">
+                    ✦ AI-powered health information
+                </div>
+
+                <h1>
+                    Understand your health.
+                    <span>Without the medical jargon.</span>
+                </h1>
+
+                <p>
+                    MedBridge helps you understand medical information
+                    in simple language using AI.
+                </p>
+
+                <div class="hero-actions">
+                    <button class="primary-button" id="askButton">
+                        Ask MedBridge
+                        <span>→</span>
+                    </button>
+
+                    <button class="secondary-button" id="learnButton">
+                        Explore features
+                    </button>
+                </div>
+
+                <div class="trust-line">
+                    <span>✓ Simple explanations</span>
+                    <span>✓ AI-powered</span>
+                    <span>✓ Privacy-focused</span>
+                </div>
+
+            </div>
+
+
+            <!-- AI Preview Card -->
+            <div class="ai-preview">
+
+                <div class="preview-header">
+                    <div class="ai-profile">
+                        <div class="ai-avatar">✦</div>
+                        <div>
+                            <strong>MedBridge AI</strong>
+                            <small>Medical information assistant</small>
+                        </div>
+                    </div>
+
+                    <div class="online-dot"></div>
+                </div>
+
+                <div class="chat-preview">
+
+                    <div class="user-message">
+                        What does an ECG show?
+                    </div>
+
+                    <div class="ai-message">
+                        <strong>MedBridge</strong>
+                        <p>
+                            An ECG records the electrical activity
+                            of your heart. It can help healthcare
+                            professionals understand heart rhythm
+                            and other electrical patterns.
+                        </p>
+
+                        <div class="info-note">
+                            Educational information — not a diagnosis.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="preview-input">
+                    <span>Ask a medical question...</span>
+                    <button>→</button>
+                </div>
+
+            </div>
+
         </section>
 
 
-        <section class="features">
+        <!-- Features -->
+        <section class="features-section" id="features">
 
-            <div class="card">
-                <h3>Upload Records</h3>
+            <div class="section-heading">
+                <div class="badge">WHAT MEDBRIDGE CAN DO</div>
+
+                <h2>
+                    Your medical information,
+                    <span>made easier.</span>
+                </h2>
+
                 <p>
-                    Upload medical reports and documents to help organize
-                    important information.
+                    Designed to help people understand complex
+                    health information without unnecessary jargon.
                 </p>
             </div>
 
-            <div class="card">
-                <h3>Ask MedBridge</h3>
-                <p>
-                    Ask questions about medical information and receive
-                    easy-to-understand explanations.
-                </p>
+
+            <div class="feature-grid">
+
+                <div class="feature-card large-card">
+                    <div class="feature-icon">💬</div>
+
+                    <h3>Ask MedBridge</h3>
+
+                    <p>
+                        Ask questions about medical concepts and
+                        receive easy-to-understand explanations.
+                    </p>
+
+                    <button class="card-link" id="featureAsk">
+                        Start asking →
+                    </button>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">📄</div>
+
+                    <h3>Understand Reports</h3>
+
+                    <p>
+                        Turn complicated medical terminology
+                        into simpler explanations.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎙</div>
+
+                    <h3>Voice Mode</h3>
+
+                    <p>
+                        Interact with MedBridge through a
+                        more accessible voice experience.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+
+                    <h3>Medical Terms</h3>
+
+                    <p>
+                        Quickly understand unfamiliar medical
+                        words and concepts.
+                    </p>
+                </div>
+
             </div>
 
-            <div class="card">
-                <h3>Voice Mode</h3>
-                <p>
-                    Interact with MedBridge using voice for a more accessible
-                    experience.
-                </p>
+        </section>
+
+
+        <!-- About -->
+        <section class="about-section" id="about">
+
+            <div class="about-card">
+
+                <div class="about-icon">✚</div>
+
+                <div>
+                    <div class="badge">WHY MEDBRIDGE?</div>
+
+                    <h2>
+                        Bridging the gap between
+                        <span>medical language and people.</span>
+                    </h2>
+
+                    <p>
+                        Medical information can be difficult to understand.
+                        MedBridge is designed as an educational tool that
+                        helps make complex information easier to understand.
+                    </p>
+                </div>
+
             </div>
 
         </section>
 
     </main>
 
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            <span>✚</span>
+            MedBridge
+        </div>
+
+        <p>
+            AI-powered medical information, made understandable.
+        </p>
+
+        <small>
+            MedBridge provides educational information and is not a
+            substitute for professional medical advice.
+        </small>
+
+    </footer>
+
+
     <script src="script.js"></script>
 
 </body>
 </html>
+        
